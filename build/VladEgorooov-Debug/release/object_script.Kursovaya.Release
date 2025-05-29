@@ -1,0 +1,15 @@
+release/AddLessonDialog.o
+release/Classroom.o
+release/Group.o
+release/Lesson.o
+release/RoomSearcher.o
+release/Schedule.o
+release/ScheduleManager.o
+release/Subject.o
+release/SystemController.o
+release/Teacher.o
+release/TimeSlot.o
+release/main.o
+release/mainwindow.o
+release/moc_AddLessonDialog.o
+release/moc_mainwindow.o

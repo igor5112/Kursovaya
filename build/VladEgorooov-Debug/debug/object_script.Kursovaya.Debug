@@ -1,0 +1,15 @@
+debug/AddLessonDialog.o
+debug/Classroom.o
+debug/Group.o
+debug/Lesson.o
+debug/RoomSearcher.o
+debug/Schedule.o
+debug/ScheduleManager.o
+debug/Subject.o
+debug/SystemController.o
+debug/Teacher.o
+debug/TimeSlot.o
+debug/main.o
+debug/mainwindow.o
+debug/moc_AddLessonDialog.o
+debug/moc_mainwindow.o
