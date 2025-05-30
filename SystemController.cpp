@@ -1,7 +1,7 @@
 #include "SystemController.h"
 
 SystemController::SystemController(const std::vector<Classroom>& rooms)
-    : roomSearcher(rooms) // Здесь только инициализируется roomSearcher
+    : roomSearcher(rooms) 
 {
     
 }
