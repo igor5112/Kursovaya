@@ -3,21 +3,21 @@
 
 #include <vector>
 #include <string>
-#include "RoomSearcher.h"  // Предполагается, что этот класс есть
+#include "RoomSearcher.h"  
 #include "Classroom.h"
-#include "ScheduleManager.h" // Нужен для доступа к расписанию
+#include "ScheduleManager.h" 
 
 class SystemController {
 private:
-    RoomSearcher roomSearcher;  // Объект поиска аудиторий
+    RoomSearcher roomSearcher; 
 public:
     SystemController(const std::vector<Classroom>& rooms);
 
-    // Метод для получения свободных аудиторий
+   
     std::vector<Classroom> getFreeRooms(const std::string &date, const TimeSlot &timeSlot) const;
 
-    // Возвращает ссылку на единственный экземпляр ScheduleManager
+    
     ScheduleManager& getScheduleManager();
 };
 
-#endif // SYSTEMCONTROLLER_H
+#endif 
