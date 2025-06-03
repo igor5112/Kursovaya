@@ -9,33 +9,28 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    AddLessonDialog.cpp \
     Classroom.cpp \
     Group.cpp \
     Lesson.cpp \
-    RoomSearcher.cpp \
-    Schedule.cpp \
+    ScheduleDatabase.cpp \
     ScheduleManager.cpp \
+    ScheduleObserver.cpp \
+    StatsCalculator.cpp \
     Subject.cpp \
-    SystemController.cpp \
     Teacher.cpp \
-    TimeSlot.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
-    AddLessonDialog.h \
     Classroom.h \
     Group.h \
     Lesson.h \
-    RoomSearcher.h \
-    RoomSearcher_копия.h \
-    Schedule.h \
+    ScheduleDatabase.h \
     ScheduleManager.h \
+    ScheduleObserver.h \
+    StatsCalculator.h \
     Subject.h \
-    SystemController.h \
     Teacher.h \
-    TimeSlot.h \
     mainwindow.h
 
 FORMS += \
