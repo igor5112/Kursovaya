@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1010</width>
+    <height>510</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="lessonIdInput">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>350</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid #5A5A5A;
+border-radius: 8px;
+background-color: #D8D8D8;
+padding: 6px 12px;
+font: 900 9pt &quot;Segoe UI&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="groupComboBox">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>270</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid #5A5A5A;
+border-radius: 8px;
+background-color: #D8D8D8;
+padding: 6px 12px;
+font: 900 9pt &quot;Segoe UI&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="subjectComboBox">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>220</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid #5A5A5A;
+border-radius: 8px;
+background-color: #D8D8D8;
+padding: 6px 12px;
+font: 900 9pt &quot;Segoe UI&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="teacherComboBox">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>220</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid #5A5A5A;
+border-radius: 8px;
+background-color: #D8D8D8;
+padding: 6px 12px;
+font: 900 9pt &quot;Segoe UI&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QDateTimeEdit" name="startTimeEdit">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>270</y>
+      <width>194</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid #5A5A5A;
+border-radius: 8px;
+background-color: #D8D8D8;
+padding: 6px 12px;
+font: 900 9pt &quot;Segoe UI&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QDateTimeEdit" name="endTimeEdit">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>310</y>
+      <width>194</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid #5A5A5A;
+border-radius: 8px;
+background-color: #D8D8D8;
+padding: 6px 12px;
+font: 900 9pt &quot;Segoe UI&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="scheduleListWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1001</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 8px;
+border: 2px solid #5A5A5A;
+font: 900 9pt &quot;Segoe UI&quot;;
+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addLessonButton">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>270</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid #5A5A5A;
+font: 900 9pt &quot;Segoe UI&quot;;
+border-radius: 8px;
+background-color: #D8D8D8;
+padding: 6px 12px;
+</string>
+    </property>
+    <property name="text">
+     <string>Добавить занятие</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="removeLessonButton">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>310</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid #5A5A5A;
+border-radius: 8px;
+background-color: #D8D8D8;
+padding: 6px 12px;
+font: 900 9pt &quot;Segoe UI&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Убрать занятие</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="findFreeClassroomsButton">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>380</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid #5A5A5A;
+border-radius: 8px;
+background-color: #D8D8D8;
+padding: 6px 12px;
+font: 900 9pt &quot;Segoe UI&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Найти свободную аудиторию</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="freeClassroomsListWidget">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>220</y>
+      <width>251</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 8px;
+border: 2px solid #5A5A5A;
+font: 900 9pt &quot;Segoe UI&quot;;
+</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="classroomComboBox">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>220</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid #5A5A5A;
+border-radius: 8px;
+background-color: #D8D8D8;
+padding: 6px 12px;
+font: 900 9pt &quot;Segoe UI&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="lessonTypeComboBox">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>310</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid #5A5A5A;
+border-radius: 8px;
+background-color: #D8D8D8;
+padding: 6px 12px;
+font: 900 9pt &quot;Segoe UI&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="editLessonButton">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>270</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid #5A5A5A;
+font: 900 9pt &quot;Segoe UI&quot;;
+border-radius: 8px;
+background-color: #D8D8D8;
+padding: 6px 12px;
+</string>
+    </property>
+    <property name="text">
+     <string>Изменить</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="showStatsButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>390</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid #5A5A5A;
+font: 900 9pt &quot;Segoe UI&quot;;
+border-radius: 8px;
+background-color: #D8D8D8;
+padding: 6px 12px;
+</string>
+    </property>
+    <property name="text">
+     <string>Доп. информация</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1010</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
