@@ -1,13 +1,20 @@
 #include "Teacher.h"
 
-Teacher::Teacher(int id, const std::string &name)
-    : teacherID(id), name(name)
-{}
+Teacher::Teacher(int id, const QString& firstName, const QString& lastName)
+    : m_id(id), m_firstName(firstName), m_lastName(lastName) {}
 
-int Teacher::getTeacherID() const {
-    return teacherID;
+int Teacher::getId() const {
+    return m_id;
 }
 
-std::string Teacher::getName() const {
-    return name;
+QString Teacher::getFirstName() const {
+    return m_firstName;
+}
+
+QString Teacher::getLastName() const {
+    return m_lastName;
+}
+
+QString Teacher::getFullName() const {
+    return m_firstName + " " + m_lastName;
 }
